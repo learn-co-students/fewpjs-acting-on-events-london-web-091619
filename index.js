@@ -2,12 +2,16 @@ const dodger = document.getElementById("dodger");
 
 function moveDodgerLeft(){
     let left = convertToInt(dodger.style.left)
+    if (left > 0){
     dodger.style.left = convertToPx(left - 20)
+    }
 }
 
 function moveDodgerRight(){
     let left = convertToInt(dodger.style.left)
+    if (left < 360){
     dodger.style.left = convertToPx(left + 20)
+    }
 }
 
 
